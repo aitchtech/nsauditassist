@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "build:gh-pages": "ng build --prod --base-href=\"/nsauditassist/\"",
+    "ngh:gh-pages": "npx ngh --dir=dist/nsauditassist",
+    "publish": "npm run build:gh-pages && npm run ngh:gh-pages",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
